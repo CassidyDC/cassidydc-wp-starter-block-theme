@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Example Pattern
- * Slug: cassidywp-starter-block-theme/example-pattern
+ * Slug: cassidydc-wp-starter-block-theme/example-pattern
  * Categories: page
  * Keywords: example, pattern
  * Block Types: core/post-content
  * Viewport Width: 1440
  *
- * @package CassidyWP\StarterBlockTheme\Patterns
+ * @package CassidyDC\WPStarterBlockTheme\Patterns
  * @version 1.0.0
  */
 

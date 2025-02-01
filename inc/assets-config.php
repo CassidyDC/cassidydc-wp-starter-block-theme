@@ -2,12 +2,12 @@
 /**
  * Configuration functions to set assets properties
  *
- * @package CassidyWP\StarterBlockTheme\Functions
+ * @package CassidyDC\WPStarterBlockTheme\Functions
  * @version 1.0.0
  */
 
 declare( strict_types = 1 );
-namespace CassidyWP\StarterBlockTheme;
+namespace CassidyDC\WPStarterBlockTheme;
 
 /**
  * Sets theme assets properties
@@ -16,44 +16,44 @@ namespace CassidyWP\StarterBlockTheme;
  *
  * @since 1.0.0
  * @param string $asset_type The type of asset being retrieved: `style|script|editor_ui_style|editor_ui_script`.
- * @return array A list of assets properties.
+ * @return array<string[]> A list of assets properties.
  */
 function get_theme_assets_config( string $asset_type ): array {
 	// Theme stylesheet assets configuration settings: `file|handle|deps|media`.
-	$styles_config = array(
+	$styles_config = [
 		'type'   => 'style',
-		'assets' => array(
-			array(
+		'assets' => [
+			[
 				'file' => 'screen.css',
-			),
-		),
-	);
+			],
+		],
+	];
 
 	// Theme script asset configuration settings: `file|cat|handle|deps|args`.
-	$scripts_config = array(
+	$scripts_config = [
 		'type'   => 'script',
-		'assets' => array(
-			array(
+		'assets' => [
+			[
 				'file' => 'script.js',
-			),
-		),
-	);
+			],
+		],
+	];
 
 	// Editor UI stylesheet asset configuration settings: `file|handle|deps|media`.
-	$editor_ui_styles_config = array(
+	$editor_ui_styles_config = [
 		'type'   => 'editor_ui_style',
-		'assets' => array(),
-	);
+		'assets' => [],
+	];
 
 	// Editor UI script asset configuration settings: `file|handle|deps|args`.
-	$editor_ui_scripts_config = array(
+	$editor_ui_scripts_config = [
 		'type'   => 'editor_ui_script',
-		'assets' => array(
-			array(
+		'assets' => [
+			[
 				'file' => 'editor.js',
-			),
-		),
-	);
+			],
+		],
+	];
 
 	// Sets which config settings to return.
 	$assets_config = match ( $asset_type ) {
@@ -61,6 +61,7 @@ function get_theme_assets_config( string $asset_type ): array {
 		'scripts'           => $scripts_config,
 		'editor_ui_styles'  => $editor_ui_styles_config,
 		'editor_ui_scripts' => $editor_ui_scripts_config,
+		default => [],
 	};
 
 	return process_theme_assets( $assets_config );
@@ -72,14 +73,14 @@ function get_theme_assets_config( string $asset_type ): array {
  * Configurable asset properties: `file`.
  *
  * @since 1.0.0
- * @return array A multidimensional array of editor stylesheet properties.
+ * @return array<string[]> A multidimensional array of editor stylesheet properties.
  */
 function get_editor_styles_config(): array {
-	$editor_styles_config = array(
-		array(
+	$editor_styles_config = [
+		[
 			'file' => 'editor.css',
-		),
-	);
+		],
+	];
 
 	return process_editor_styles( $editor_styles_config );
 }
@@ -88,27 +89,27 @@ function get_editor_styles_config(): array {
  * Sets block pattern categories properties
  *
  * @since 1.0.0
- * @return array A multidimensional array of block pattern categories properties.
+ * @return array<string[]> A multidimensional array of block pattern categories properties.
  */
 function get_block_pattern_categories_config(): array {
-	return array(
-		'boxes'    => array(
-			'label'       => __( 'Boxes', 'cassidywp-starter-block-theme' ),
-			'description' => __( 'A collection of box patterns.', 'cassidywp-starter-block-theme' ),
-		),
-		'heroes'   => array(
-			'label'       => __( 'Heroes', 'cassidywp-starter-block-theme' ),
-			'description' => __( 'A collection of header heroes patterns.', 'cassidywp-starter-block-theme' ),
-		),
-		'pages'    => array(
-			'label'       => __( 'Pages', 'cassidywp-starter-block-theme' ),
-			'description' => __( 'A collection of of full page layouts.', 'cassidywp-starter-block-theme' ),
-		),
-		'sections' => array(
-			'label'       => __( 'Sections', 'cassidywp-starter-block-theme' ),
-			'description' => __( 'A collection of page sections.', 'cassidywp-starter-block-theme' ),
-		),
-	);
+	return [
+		'boxes'    => [
+			'label'       => __( 'Boxes', 'cassidydc-wp-starter-block-theme' ),
+			'description' => __( 'A collection of box patterns.', 'cassidydc-wp-starter-block-theme' ),
+		],
+		'heroes'   => [
+			'label'       => __( 'Heroes', 'cassidydc-wp-starter-block-theme' ),
+			'description' => __( 'A collection of header heroes patterns.', 'cassidydc-wp-starter-block-theme' ),
+		],
+		'pages'    => [
+			'label'       => __( 'Pages', 'cassidydc-wp-starter-block-theme' ),
+			'description' => __( 'A collection of of full page layouts.', 'cassidydc-wp-starter-block-theme' ),
+		],
+		'sections' => [
+			'label'       => __( 'Sections', 'cassidydc-wp-starter-block-theme' ),
+			'description' => __( 'A collection of page sections.', 'cassidydc-wp-starter-block-theme' ),
+		],
+	];
 }
 
 /**
@@ -117,7 +118,7 @@ function get_block_pattern_categories_config(): array {
  * Properties are auto-generated with `process_block_styles()`. Nothing to configure here.
  *
  * @since 1.0.0
- * @return array List of individual block stylesheet properties.
+ * @return mixed[] List of individual block stylesheet properties.
  */
 function get_block_styles_config(): array {
 	return process_block_styles();

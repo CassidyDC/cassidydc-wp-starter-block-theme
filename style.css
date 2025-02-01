@@ -1,10 +1,10 @@
 /*
-Theme Name: CassidyWP Starter Block Theme
-Theme URI: https://cassidywp.com
+Theme Name: CassidyDC WP Starter Block Theme
+Theme URI: https://cassidydc.com
 Author: Jacob Cassidy
 Author URI: https://jacobcassidy.com
 Description: A starter Block Theme for WordPress developers to build a custom, enterprise-level theme, with all block options set to false. Allowing you to turn on only what you need for a clean editor experience.
-Text Domain: cassidywp-starter-block-theme
+Text Domain: cassidydc-wp-starter-block-theme
 Requires at least: 6.7
 Requires PHP: 8.0 or greater
 Tested up to: 6.7
@@ -13,4 +13,4 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/* DO NOT ADD CSS HERE. See README.md for instructions on adding CSS to the theme. */
+/* DO NOT ADD CSS HERE. See README.md for instructions on adding CSS to the theme in the modern way. */

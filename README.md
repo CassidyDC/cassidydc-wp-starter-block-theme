@@ -1,4 +1,4 @@
-# CassidyWP Starter Block Theme
+# CassidyDC WP Starter Block Theme
 
 | Table of Contents                                               |
 | --------------------------------------------------------------- |
@@ -16,9 +16,9 @@ For those less familiar with Block Theme development, I provide a few guidelines
 
 ## Quick Start Guide
 
-### 1. Clone the CassidyWP Starter Theme locally
+### 1. Clone the CassidyDC Starter Theme locally
 
-In your _wp-content/themes_ directory, run `git clone git@github.com:jacobcassidy/cassidywp-starter-block-theme.git`.
+In your _wp-content/themes_ directory, run `git clone git@github.com:jacobcassidy/wordpress-starter-block-theme.git`.
 
 ### 2. Create your remote git repo and connect it to your local repo
 
@@ -30,11 +30,12 @@ You can confirm you're connected to the correct remote repo by running `git remo
 
 When you rename the theme to start your custom development, do a global **search and replace** in your code editor to replace the following texts _(keep the same formatting of lower/uppercase letters in your replacement text)_:
 
-| Text to Replace                 | Type             | Used In             |
-| ------------------------------- | ---------------- | ------------------- |
-| `CassidyWP\StarterBlockTheme`   | Namespace        | PHP files           |
-| `cassidywp-starter-block-theme` | Name/Text Domain | Multiple file types |
-| `CassidyWP Starter Block Theme` | Theme Name       | `style.css`         |
+| Text to Replace                    | Type             | Used In             |
+| ---------------------------------- | ---------------- | ------------------- |
+| `CassidyDC\WPStarterBlockTheme`    | Namespace        | All PHP files       |
+| `cassidydc-wp-starter-block-theme` | Slug/Text Domain | Multiple file types |
+| `CassidyDC WP Starter Block Theme` | Theme Name       | `style.css`         |
+| `cassidydc`                        | `HANDLE_PREFIX`  | `functions.php`     |
 
 ### 4. Install the development packages
 
@@ -120,8 +121,8 @@ If you want to go deeper, there are many free and paid courses, such as [The Joy
 
 ## What's New?
 
-View the [Changelog](https://github.com/jacobcassidy/cassidywp-starter-block-theme/blob/main/CHANGELOG.md) to see what's new.
+View the [Changelog](https://github.com/jacobcassidy/wordpress-starter-block-theme/blob/main/CHANGELOG.md) to see what's new.
 
 ## Issues?
 
-If you come across any issues, please feel free to [report them here](https://github.com/jacobcassidy/cassidywp-starter-block-theme/issues). You are also welcome to [create a pull request](https://github.com/jacobcassidy/cassidywp-starter-block-theme/pulls).
+If you come across any issues, please feel free to [report them here](https://github.com/jacobcassidy/wordpress-starter-block-theme/issues). You are also welcome to [create a pull request](https://github.com/jacobcassidy/wordpress-starter-block-theme/pulls).

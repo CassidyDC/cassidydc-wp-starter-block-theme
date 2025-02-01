@@ -2,7 +2,7 @@
 /**
  * Theme Functions
  *
- * @package CassidyWP\StarterBlockTheme\Functions
+ * @package CassidyDC\WPStarterBlockTheme\Functions
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  * @version 1.0.0
  */
@@ -13,7 +13,7 @@
  * @since 1.0.0
  */
 define( 'THEME_VERSION', wp_get_theme()->get( 'Version' ) );
-define( 'THEME_PREFIX', 'cassidywp-starter-block-theme' );
+define( 'HANDLE_PREFIX', 'cassidydc' );
 
 /**
  * Sets theme assets config settings
