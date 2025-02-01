@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Updated $schema version in `theme.json` for WP v6.7
 -   Updated config function names in `assets-config.php`, `assets-enqueue.php`, and `assets-register.php` for clarity.
 -   Updated default page template file (`/templates/page.html`).
+-   Updated theme's screenshot.png file with name update.
 
 ## [2.1.0] - 2024-11-24
 
