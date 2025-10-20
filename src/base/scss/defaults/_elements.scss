@@ -15,9 +15,9 @@ html:focus-within {
 
 body {
 	accent-color: var(--wp--preset--color--secondary);
-	text-rendering: optimizespeed;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizespeed;
 }
 
 button,
@@ -29,8 +29,8 @@ textarea {
 
 img,
 picture {
-	height: auto;
-	max-width: 100%;
+	block-size: auto;
+	max-inline-size: 100%;
 }
 
 button,
@@ -47,6 +47,7 @@ input:focus,
 input[type="button"],
 input[type="submit"],
 textarea:focus {
+	/* stylelint-disable-next-line plugin/no-low-performance-animation-properties -- Using 'all' for convenience in this simple transition */
 	transition: all 250ms ease-in-out;
 }
 
@@ -60,9 +61,9 @@ textarea:focus {
 	*,
 	*::before,
 	*::after {
+		scroll-behavior: auto !important;
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
 	}
 }

@@ -3,7 +3,11 @@
 	"version": 3,
 	"title": "Variation A",
 	"slug": "variation-a",
-	"blockTypes": ["core/group", "core/columns", "core/media-text"],
+	"blockTypes": [
+		"core/group",
+		"core/columns",
+		"core/media-text"
+	],
 	"styles": {
 		"color": {
 			"background": "#eed8d3",

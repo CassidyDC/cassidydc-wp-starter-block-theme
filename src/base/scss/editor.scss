@@ -2,27 +2,27 @@
  * `add_editor_style()` function, so SCSS is used here for now.
  */
 
-//------------------------
+// ------------------------
 // DEFAULTS
-//------------------------
+// ------------------------
 @use "defaults/custom-properties";
 @use "defaults/elements";
 @use "defaults/utility-classes";
 
-//------------------------
+// ------------------------
 // MODULES
-//------------------------
+// ------------------------
 @use "modules/animations";
 @use "modules/typography";
 
-//------------------------
+// ------------------------
 // SECTIONS
-//------------------------
+// ------------------------
 @use "sections/global";
 @use "sections/site-footer";
 @use "sections/site-header";
 
-//------------------------
+// ------------------------
 // EDITOR
-//------------------------
+// ------------------------
 @use "editor/wp-editor-only";
