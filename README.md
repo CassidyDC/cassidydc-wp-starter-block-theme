@@ -1,12 +1,12 @@
-# CassidyDC WP Starter Block Theme
+# README for CassidyDC WP Starter Block Theme
 
-| Table of Contents                                               |
-| --------------------------------------------------------------- |
-| [Overview](#overview)                                           |
-| [Quick Start Guide](#quick-start-guide)                         |
-| [Learn Block Theme Development](#learn-block-theme-development) |
-| [What's New?](#whats-new)                                       |
-| [Issues?](#issues)                                              |
+| Table of Contents                                                     |
+| --------------------------------------------------------------------- |
+| [Overview](#overview)                                                 |
+| [Quick Start Guide](#quick-start-guide)                               |
+| [Learning Block Theme Development](#learning-block-theme-development) |
+| [What's New?](#whats-new)                                             |
+| [Issues?](#issues)                                                    |
 
 ## Overview
 
