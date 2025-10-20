@@ -1,9 +1,12 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
 	"version": 3,
 	"settings": {
 		"appearanceTools": false,
-		"background": {},
+		"background": {
+			"backgroundImage": false,
+			"backgroundSize": false
+		},
 		"blocks": {
 			"core/button": {
 				"border": {
@@ -27,28 +30,41 @@
 		},
 		"color": {
 			"background": false,
+			"button": false,
+			"caption": false,
 			"custom": false,
 			"customDuotone": false,
 			"customGradient": false,
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"defaultPalette": false,
-			"link": false,
-			"text": false,
 			"duotone": [],
 			"gradients": [],
-			"palette": []
+			"heading": false,
+			"link": false,
+			"palette": [],
+			"text": false
 		},
 		"custom": {},
 		"dimensions": {
+			"aspectRatio": false,
+			"aspectRatios": [],
+			"defaultAspectRatios": false,
 			"minHeight": false
 		},
 		"layout": {
 			"allowCustomContentAndWideSize": false,
-			"allowEditing": false
+			"allowEditing": false,
+			"contentSize": "",
+			"wideSize": ""
 		},
-		"lightbox": {},
-		"position": {},
+		"lightbox": {
+			"allowEditing": false,
+			"enabled": false
+		},
+		"position": {
+			"sticky": false
+		},
 		"shadow": {
 			"defaultPresets": false,
 			"presets": []
@@ -59,8 +75,15 @@
 			"defaultSpacingSizes": false,
 			"margin": false,
 			"padding": false,
+			"spacingScale": {},
 			"spacingSizes": [],
-			"units": [ "px", "rem", "vh", "vw", "%" ]
+			"units": [
+				"%",
+				"px",
+				"rem",
+				"vh",
+				"vw"
+			]
 		},
 		"typography": {
 			"customFontSize": false,
@@ -87,12 +110,14 @@
 		"border": {},
 		"color": {},
 		"css": "",
+		"dimensions": {},
 		"elements": {},
 		"filter": {},
 		"outline": {},
 		"shadow": {},
 		"spacing": {},
-		"typography": {}
+		"typography": {},
+		"variations": {}
 	},
 	"customTemplates": [],
 	"templateParts": [
